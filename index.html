@@ -24,10 +24,53 @@
                 <img src="socialbook_img/images/search.png" alt="">
                 <input type="text" placeholder="Search">
             </div>
-            <div class="nav-user-icon online">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                 <img src="socialbook_img/images/profile-pic.png" alt="">
             </div>
         </div>
+        <!-- Settings Menu -->
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="socialbook_img/images/profile-pic.png" alt="">
+                    <div>
+                        <p>John Nikolay</p>
+                        <!-- <small> public  <b>&#8964 </b> </small> -->
+                        <a href="">See Your Profil</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="socialbook_img/images/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <!-- <small> public  <b>&#8964 </b> </small> -->
+                        <a href="">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="socialbook_img/images/setting.png" alt="" class="settings-icon">
+                    <a href="">Settings & Privacy <img src="socialbook_img/images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="socialbook_img/images/help.png" alt="" class="settings-icon">
+                    <a href="">Help & Support <img src="socialbook_img/images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="socialbook_img/images/display.png" alt="" class="settings-icon">
+                    <a href="">Display & Accessibility <img src="socialbook_img/images/arrow.png" alt="" width="10px"></a>
+                </div>
+                <div class="settings-links">
+                    <img src="socialbook_img/images/logout.png" alt="" class="settings-icon">
+                    <a href="">Logout <img src="socialbook_img/images/arrow.png" alt="" width="10px"></a>
+                </div>
+            </div>
+        </div>
+        <!-- end Settings Menu  -->
     </nav>
     <div class="container">
         <!-- left sidebar -->
@@ -85,18 +128,123 @@
                     </div>
                 </div>
             </div>
+            <!-- post-container 1 -->
             <div class="post-container">
-                <div class="user-profile">
-                    <img src="socialbook_img/images/profile-pic.png" alt="">
-                    <div>
-                        <p>John Nikolay</p>
-                        <!-- <small> public  <b>&#8964 </b> </small> -->
-                        <span>June 24 2011 11.30</span>
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="socialbook_img/images/profile-pic.png" alt="">
+                        <div>
+                            <p>John Nikolay</p>
+                            <!-- <small> public  <b>&#8964 </b> </small> -->
+                            <span>June 24 2011 11.30</span>
+                        </div>
+                    </div>
+                    <a href=""><b>&#8230</b></a>
+                </div>
+                <p class="post-text">Like and share this video with friends, tag <span> @easy Tutorial</span> facebook page on your post.Ask your doubts in the comments <a href="">#easy Tutorial</a> <a href="">#Youtube Channel</a></p>
+                <img src="socialbook_img/images/feed-image-2.png" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="socialbook_img/images/like.png" alt="">120</div>
+                        <div><img src="socialbook_img/images/comments.png" alt="">30</div>
+                        <div><img src="socialbook_img/images/share.png" alt="">120</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="socialbook_img/images/profile-pic.png" alt="">
+                        <b>&#8964 </b>
                     </div>
                 </div>
-                <p class="post-text">Subscribe <span> @easy Tutorial</span> Youtube channel to watch more videos on wbesite development and UI Design <a href="">#easy Tutorial</a> <a href="">Youtube Channel</a></p>
-                <img src="socialbook_img/images/feed-image-1.png" alt="" class="post-img">
             </div>
+            <!-- end post container 1 -->
+            <!-- post-container 2 -->
+            <div class="post-container">
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="socialbook_img/images/profile-pic.png" alt="">
+                        <div>
+                            <p>John Nikolay</p>
+                            <!-- <small> public  <b>&#8964 </b> </small> -->
+                            <span>June 24 2011 11.30</span>
+                        </div>
+                    </div>
+                    <a href=""><b>&#8230</b></a>
+                </div>
+                <p class="post-text">Like and share this video with friends, tag <span> @easy Tutorial</span> facebook page on your post.Ask your doubts in the comments <a href="">#easy Tutorial</a> <a href="">#Youtube Channel</a></p>
+                <img src="socialbook_img/images/feed-image-3.png" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="socialbook_img/images/like.png" alt="">120</div>
+                        <div><img src="socialbook_img/images/comments.png" alt="">30</div>
+                        <div><img src="socialbook_img/images/share.png" alt="">120</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="socialbook_img/images/profile-pic.png" alt="">
+                        <b>&#8964 </b>
+                    </div>
+                </div>
+            </div>
+            <!-- end post-container 2 -->
+            <!-- post-container 3 -->
+            <div class="post-container">
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="socialbook_img/images/profile-pic.png" alt="">
+                        <div>
+                            <p>John Nikolay</p>
+                            <!-- <small> public  <b>&#8964 </b> </small> -->
+                            <span>June 24 2011 11.30</span>
+                        </div>
+                    </div>
+                    <a href=""><b>&#8230</b></a>
+                </div>
+                <p class="post-text">Like and share this video with friends, tag <span> @easy Tutorial</span> facebook page on your post.Ask your doubts in the comments <a href="">#easy Tutorial</a> <a href="">#Youtube Channel</a></p>
+                <img src="socialbook_img/images/feed-image-4.png" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="socialbook_img/images/like.png" alt="">120</div>
+                        <div><img src="socialbook_img/images/comments.png" alt="">30</div>
+                        <div><img src="socialbook_img/images/share.png" alt="">120</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="socialbook_img/images/profile-pic.png" alt="">
+                        <b>&#8964 </b>
+                    </div>
+                </div>
+            </div>
+            <!-- end post-container 2 -->
+            <!-- post-container 3 -->
+            <div class="post-container">
+                <div class="post-row">
+
+                    <div class="user-profile">
+                        <img src="socialbook_img/images/profile-pic.png" alt="">
+                        <div>
+                            <p>John Nikolay</p>
+                            <!-- <small> public  <b>&#8964 </b> </small> -->
+                            <span>June 24 2011 11.30</span>
+                        </div>
+                    </div>
+                    <a href=""><b>&#8230</b></a>
+                </div>
+                <p class="post-text">Like and share this video with friends, tag <span> @easy Tutorial</span> facebook page on your post.Ask your doubts in the comments <a href="">#easy Tutorial</a> <a href="">#Youtube Channel</a></p>
+                <img src="socialbook_img/images/feed-image-5.png" alt="" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="socialbook_img/images/like.png" alt="">120</div>
+                        <div><img src="socialbook_img/images/comments.png" alt="">30</div>
+                        <div><img src="socialbook_img/images/share.png" alt="">120</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="socialbook_img/images/profile-pic.png" alt="">
+                        <b>&#8964 </b>
+                    </div>
+                </div>
+            </div>
+            <!-- end post-container 2 -->
+            <button class="load-more-btn">Load More</button>
         </div>
         <!-- end main-content -->
 
@@ -154,6 +302,11 @@
         </div>
         <!-- end right-sidebar -->
     </div>
+    <div class="footer">
+        <p>copyright &copy; 2021 - easy Tutorial youtube </p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
